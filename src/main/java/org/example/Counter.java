@@ -20,8 +20,22 @@ public class Counter {
         currentValue++;
     }
 
+    //Overloaded method
+    public void increase(int increaseBy) {
+        if(increaseBy > 0) {
+            currentValue += increaseBy;
+        }
+    }
+
     public void decrease() {
         currentValue--;
+    }
+
+    //Overloaded method
+    public void decrease(int decreaseBy) {
+        if(decreaseBy > 0) {
+            currentValue -= decreaseBy;
+        }
     }
 
     //Method to return current value of counter
